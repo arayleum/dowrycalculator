@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groom Price Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>Groom Price Calculator</h1>
+    
+    <div class="calculator">
+        <div class="form-group">
+            <label for="education">Groom's Education:</label>
+            <select id="education">
+                <option value="1.5">Undergraduate degree (+1.5x)</option>
+                <option value="1.2">College degree (+1.2x)</option>
+                <option value="1.05">High school degree (+1.05x)</option>
+                <option value="0.9">Middle school degree (+0.9x)</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="familyNetWorth">Groom's Family Net Worth:</label>
+            <select id="familyNetWorth">
+                <option value="2">More than $10,000 (+2x)</option>
+                <option value="1.5">$5,000-$10,000 (+1.5x)</option>
+                <option value="1.2">Less than $5,000 (+1.2x)</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="caste">Groom's Caste:</label>
+            <select id="caste">
+                <option value="100">Brahmin (+$100)</option>
+                <option value="50">Kshatriya (+$50)</option>
+                <option value="20">Vaishya (+$20)</option>
+                <option value="10">Shudra (+$10)</option>
+                <option value="-50">Varna - untouchable (-$50)</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label>Groom's Skills:</label>
+            <div>
+                <input type="checkbox" id="skill1" value="10">
+                <label for="skill1">Plays musical instrument (+$10)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="skill2" value="20">
+                <label for="skill2">Good cook (+$20)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="skill3" value="15">
+                <label for="skill3">Easygoing character (+$15)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="skill4" value="10">
+                <label for="skill4">Sings well (+$10)</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>Groom's Age:</label>
+            <div>
+                <input type="radio" id="age1" name="age" value="1.5" checked>
+                <label for="age1">18-23 years (+1.5x)</label>
+            </div>
+            <div>
+                <input type="radio" id="age2" name="age" value="1.2">
+                <label for="age2">24-27 years (+1.2x)</label>
+            </div>
+            <div>
+                <input type="radio" id="age3" name="age" value="0.95">
+                <label for="age3">28+ years (+0.95x)</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label>Groom's Reputation:</label>
+            <div>
+                <input type="checkbox" id="rep1" value="0.85">
+                <label for="rep1">Gossips about parents' attitude (0.85x)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="rep2" value="0.9">
+                <label for="rep2">Gossips about character (0.9x)</label>
+            </div>
+            <div>
+                <input type="checkbox" id="rep3" value="-20">
+                <label for="rep3">General gossips (-$20)</label>
+            </div>
+        </div>
+        
+        <button id="calculateBtn">Calculate Price</button>
+        
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
